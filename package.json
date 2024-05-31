@@ -15,7 +15,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "prettier": "^3.2.5",
     "stylelint": "^16.5.0"
+  },
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "prettier": "^3.2.5"
   }
 }

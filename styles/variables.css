@@ -2,3 +2,88 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+
+:root {
+  --bg-color: #000028;
+  --bg-accent-color: #FF0070;
+  --header-title-color: #DB00FF;
+  --article-text-color: #F1B2CE;
+  --button-hover-color: #f1b2ce60;
+
+  --header-title-shadow-color: var(--bg-accent-color,#FF0070);
+  --section-title-color: var(--bg-accent-color,#FF0070);
+  --article-title-color: var(--bg-color,#000028);
+
+  --main-font: 'IBM Plex mono';
+  --accent-font: 'IBM Plex mono';
+
+  --page-width: 375px;
+  /*
+  --content-padding: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
+  */
+  --content-padding: 10px;
+
+  --content-block-padding: 40px;
+  --content-gap: 50px;
+
+  --header-title-width: 355px;
+  --header-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --header-subtitle-width: 355px;
+  
+  --footer-block-size: 667px;
+
+  --section-top-margin-1: 40px;
+  --section-top-margin-2: 50px;
+}
+
+
+
+
+@media screen and (min-width: 767px)  {
+
+  :root {
+    --header-font-size: 120px;
+    --page-width: 768px;
+    --content-padding: 20px;
+    --header-subtitle-width: 364px;
+    --header-title-width: 760px;
+/*    --header-title-color: #54da16; */
+    --section-top-margin-1: 60px;
+    --section-top-margin-2: 80px;
+    --content-block-padding: 60px;
+    --content-gap: 80px;
+    --footer-block-size: 1024px;
+  }
+
+}
+
+@media screen and (min-width: 800px)  {
+
+  :root {
+    --header-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+
+  }
+}
+
+
+
+@media screen and (min-width: 1023px) {
+  
+:root {
+  --page-width: 1024px;
+  --content-padding: 20px;
+  --header-subtitle-width: 491px;
+  --header-title-width: 1000px;
+/*  --header-title-color: #0d35b9; */
+  --section-top-margin-1: 60px;
+  --section-top-margin-2: 80px;
+  --content-block-padding: 60px;
+  --content-gap: 80px;
+  --footer-block-size: 768px;
+  }
+
+}
+
+
+
+
