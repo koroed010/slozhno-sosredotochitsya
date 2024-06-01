@@ -11,68 +11,60 @@
   */
 
   background-image: url(../images/cover-image-light.png);
-}
 
-:root .theme_light {
   --bg-color: #353430;
   --bg-accent-color: #FF8DCB;
   --header-title-color: #FFC2E6;
   --article-text-color: var(--bg-color,#353430);
   --section-title-color: var(--bg-color,#353430);
-  --button-hover-color: #3534305b;
+  --header-title-shadow-color: var(--bg-accent-color, #FF8DCB);
+  --button-hover-color: #32312D66;
 }
 
 
-.theme_light .header__lamp_text {
+.theme_light .header__theme-menu::before {
   color: transparent;
 }
 
-.theme_light .header__lamp_icon {
+.theme_light .header__theme-menu::after {
   background-color: transparent;
   box-shadow: 0 0 4px 2px transparent;
 }
 
-.theme_light .header__lamp_angle,
-.theme_light .header__angle , 
-.theme_light .footer__angle {
-  border-color: var(--bg-color,#353430);
+.theme_light .decorated-zone {
+  color: var(--bg-color,#353430);
 }
 
 
 @media (prefers-color-scheme: light) {
 
-  .page.theme_auto {
+  .page {
       
-  background-image: url(../images/cover-image-light.png);
+    background-image: url(../images/cover-image-light.png);
+  
+    --bg-color: #353430;
+    --bg-accent-color: #FF8DCB;
+    --header-title-color: #FFC2E6;
+    --article-text-color: var(--bg-color,#353430);
+    --section-title-color: var(--bg-color,#353430);
+    --header-title-shadow-color: var(--bg-accent-color, #FF8DCB);
+    --button-hover-color: #32312D66;
   }
-
-  :root .theme_auto {
-          
-  --bg-color: #353430;
-  --bg-accent-color: #FF8DCB;
-  --header-title-color: #FFC2E6;
-  --article-text-color: var(--bg-color,#353430);
-  --section-title-color: var(--bg-color,#353430);
-  --button-hover-color: #3534305b;
-        
-  }
-
-  .theme_auto .header__lamp_text {
+  
+  
+  .header__theme-menu::before {
     color: transparent;
   }
-    
-  .theme_auto .header__lamp_icon {
+  
+  .header__theme-menu::after {
     background-color: transparent;
     box-shadow: 0 0 4px 2px transparent;
   }
   
-  .theme_auto .header__lamp_angle,
-  .theme_auto .header__angle, 
-  .theme_auto .footer__angle {
-    border-color: var(--bg-color,#353430);
+  .decorated-zone {
+    color: var(--bg-color,#353430);
   }
-
-    
+  
 }
 
 
